@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+	<script src='https://api.tiles.mapbox.com/mapbox-gl-js/v2.13.0/mapbox-gl.js'></script>
+	<link href='https://api.tiles.mapbox.com/mapbox-gl-js/v2.13.0/mapbox-gl.css' rel='stylesheet' />
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+		integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+		crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+	<script src='https://api.mapbox.com/mapbox-gl-js/v2.9.1/mapbox-gl.js'></script>
+	<link href='https://api.mapbox.com/mapbox-gl-js/v2.9.1/mapbox-gl.css' rel='stylesheet' />
+	<title>Aerify</title>
+</head>
+
+<body>
+	<div id="home" class="group">
+		<div class="navbar">
+			<div class="nav">
+				<div class="left">
+					<img src="./techroadies-R2.svg" alt="">
+					<div>
+						<input id="input" placeholder="Srach by City Name">
+						<button id="submit">Submit</button>
+					</div>
+				</div>
+				<div class="right">
+					<ul>
+						<li><a href="#home">Home</a></li>
+						<li><a href="#about">About</a></li>
+						<li><a href="#contact">Contact</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="display">
+			<h2 id="city"></h2>
+			<div>
+				<h2 id="aqi"></h2>
+				<p id="data"></p>
+			</div>
+		</div>
+
+	</div>
+
+	<div id="about">
+		<div class="container">
+
+			<h1>
+				About
+			</h1>
+			<p>
+				Aimed at providing real time analysis of the air quality index and improving environmental health,
+				Aerify.
+				We provide real-time data on air quality in your area, tracking pollutants such as particulate matter,
+				ozone, and nitrogen dioxide. Easy to gauge interface allows easy access and analysis of the data with
+				advanced visualization features. Along with information and resources for understanding air quality
+				trends
+				and promoting clean air practices, it hopes to provide for a greener shift.
+			</p>
+		</div>
+	</div>
+
+	<div id="contact">
+		<div class="container-contact">
+			<div class="contact-left">
+				<h2>Contact Us</h2>
+				<form>
+					<label for="name">Name</label>
+					<input type="text" id="name" name="name" required>
+
+					<label for="email">Email</label>
+					<input type="email" id="email" name="email" required>
+
+					<label for="message">Message</label>
+					<textarea id="message" name="message" required></textarea>
+
+					<button type="submit">Send</button>
+				</form>
+			</div>
+			<div class="contact-right">
+				<p><i class="fa-sharp fa-solid fa-envelope"></i>&nbsp;&nbsp;AerifyContactUs@gmail.com</p>
+				<p><i class="fa-sharp fa-solid fa-phone"></i>&nbsp;&nbsp;8861425636</p>
+				<p><i class="fa-sharp fa-solid fa-location-dot"></i>&nbsp;&nbsp;KR Circle, Bangalore</p>
+			</div>
+		</div>
+	</div>
+
+	<!-- back to top  -->
+	<button id="back-to-top-btn"><i class="fa-solid fa-arrow-up"></i></button>
+
+	<!-- footer -->
+	<hr>
+	<footer>
+		<p>&copy; 2023 Aerify. All rights reserved.</p>
+	</footer>
+</body>
+<script src="app.js"></script>
+<script>
+
+</script>
+
+</html>
